@@ -1,0 +1,16 @@
+
+.mensaje{
+	background:#F3F3F3; 
+	width:all;
+    border:10px solid #9999FF;
+}
+
+.dos{
+	background:#CE8845;
+}
+
+.comentario{
+	border-bottom: 2px solid green;
+	margin: 10px;
+	font-size: 10px;
+}

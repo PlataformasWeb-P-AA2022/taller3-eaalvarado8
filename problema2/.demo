@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>problema2</title>
+  </head>
+  <body>
+      <h2>Nombre: </h2>
+      <input type="text">
+      <h3 id="nombreUniversidad">Universidad Técnica Particular de Loja</h3>
+      <button type="submit">Generar Mensaje</button>
+      <p id="mensajeFinal">
+      </p>
+  </body>
+  </html>

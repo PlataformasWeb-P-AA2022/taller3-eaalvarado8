@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <title>problema2</title>
+  </head>
+
+  <body>
+
+
+      <p>Nombre: <input id = "n" type="text" name = "nombre" ></p>
+      <p>Apellido: <input id="a" type="text" name = "apellido" ></p>
+      <p>Date: <input id = "d" type="text" name = "date" ></p>
+
+      <button type="submit">Generar Mensaje</button>
+      <p>Date: <input id = "d" type="text" name = "date" ></p>
+      <script>
+          $(document).ready(function() {
+            $( "#d" ).datepicker();
+            $( "button" ).click(function() {
+            var texto1 = $('#n').val();
+            var texto2 = $('#a').val();
+            var texto3 = $('#d').val();
+            console.log(texto1);
+            console.log(texto2);
+            console.log(texto3);
+            });
+          });
+      </script>
+  </body>
+
+ 
+
+
+  </html>
