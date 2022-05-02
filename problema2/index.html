@@ -12,26 +12,41 @@
 
   <body>
 
+    <div class = "colums">
+      <div class ="colum 1">
+        <p>Nombre: <input id = "n" type="text" name = "nombre" ></p>
+        <p>Apellido: <input id="a" type="text" name = "apellido" ></p>
+        <p>Date: <input id = "d" type="text" name = "date" ></p>
 
-      <p>Nombre: <input id = "n" type="text" name = "nombre" ></p>
-      <p>Apellido: <input id="a" type="text" name = "apellido" ></p>
-      <p>Date: <input id = "d" type="text" name = "date" ></p>
+        <button type="submit">Generar Mensaje</button>
+      
+      </div>
 
-      <button type="submit">Generar Mensaje</button>
-      <p>Date: <input id = "d" type="text" name = "date" ></p>
-      <script>
-          $(document).ready(function() {
-            $( "#d" ).datepicker();
-            $( "button" ).click(function() {
-            var texto1 = $('#n').val();
-            var texto2 = $('#a').val();
-            var texto3 = $('#d').val();
-            console.log(texto1);
-            console.log(texto2);
-            console.log(texto3);
-            });
-          });
-      </script>
+      <div class = "colum 2">
+        <h2> Datos Ingresados</h2>
+        <p id = "elName"></p>
+        <p id = "elLastName"></p>
+        <p id = "elDate"></p>
+      </div>
+    </div>
+    
+    <script>
+      $(document).ready(function() {
+      $( "#d" ).datepicker();
+      $( "button" ).click(function() {
+      var texto1 = $('#n').val();
+      var texto2 = $('#a').val();
+      var texto3 = $('#d').val();
+      console.log(texto1);
+      console.log(texto2);
+      console.log(texto3);
+      $(document.getElementById('elName').append(document.getElementById("n").value));
+      $(document.getElementById('elLastName').append(document.getElementById("a").value));
+      $(document.getElementById('elDate').append(document.getElementById("d").value));
+        });
+      });
+    </script>
+    
   </body>
 
  

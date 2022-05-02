@@ -1,0 +1,28 @@
+.colums{
+	width: 100%;
+}
+
+.colum{
+	width: 100%;
+}
+
+@media (min-width: 48em) {
+	.colum{
+	width: 50%;
+	float: left;
+	}
+	.colums{
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+.uno{
+	background-color: #003F72;
+	color: white;
+}
+
+.dos{
+	background-color: #EAAB00;
+}
